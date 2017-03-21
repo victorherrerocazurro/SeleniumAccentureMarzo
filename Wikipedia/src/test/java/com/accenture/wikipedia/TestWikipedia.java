@@ -24,7 +24,7 @@ public class TestWikipedia {
 
   @Test
   public void testWikipedia() throws Exception {
-    driver.get(baseUrl + "/wiki/Wikipedia:Portada");
+    driver.get(baseUrl + "wiki/Wikipedia:Portada");
     assertEquals("Wikipedia, la enciclopedia libre", driver.getTitle());
   }
 

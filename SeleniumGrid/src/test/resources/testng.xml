@@ -1,0 +1,15 @@
+<suite name="Parallel Tests" verbose="1" thread-count="3" parallel="tests">
+ <tests>
+         <test name="Mac+Firefox Test">
+           <parameters>
+             <parameter name="platform" value="Mac" />
+             <parameter name="browser" value="Firefox" />
+             <parameter name="version" value="30.0" />
+             <parameter name="url" value="http://bit.ly/1zdNrFZ" />
+           </parameters>
+           <classes>
+             <class name="com.selenium.gridtest.SeGridTest" />
+           </classes>
+         </test>
+       </tests>
+</suite>

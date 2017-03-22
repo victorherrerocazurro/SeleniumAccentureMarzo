@@ -1,9 +1,7 @@
 package _08_datadriven;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.Collection;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.AfterClass;
@@ -19,7 +17,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 
 import com.google.common.base.Predicate;
-import com.opencsv.CSVReader;
+
+import _10_extensions.CsvUtils;
 
 @RunWith(Parameterized.class)
 public class CSVDataDrivenTest {
@@ -34,7 +33,7 @@ public class CSVDataDrivenTest {
      
      @Parameters
      public static Collection<String[]> testData() throws IOException {
-       return getTestData("./src/test/resources/testData/registerData.csv");
+       return CsvUtils.getTestData("./src/test/resources/testData/registerData.csv");
      }
      
      public CSVDataDrivenTest(String username, String password, String confirmPassword, String email, String captcha) {
@@ -43,13 +42,6 @@ public class CSVDataDrivenTest {
   	   this.confirmPassword = confirmPassword;
   	   this.email = email;
   	   this.captcha = captcha;
-     }
-     
-     public static List<String[]> getTestData(String fileName) throws IOException {
-           CSVReader reader = new CSVReader(new FileReader(fileName));
-           List<String[]> myEntries = reader.readAll();
-           reader.close();
-           return myEntries;
      }
      
  	@BeforeClass

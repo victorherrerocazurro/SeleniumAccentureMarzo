@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/Servidor/" />
+<title>TestSelenium</title>
+</head>
+<body>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr><td rowspan="1" colspan="3">javascript_exercise</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.theautomatedtester.co.uk/tutorials/selenium/Selenium_JavaScript.htm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>number1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>number2</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>total</td>
+	<td>addtotal</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>javascript{1+1}</td>
+	<td>${addtotal}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>number1</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>number2</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>minus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>total</td>
+	<td>minustotal</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>javascript{10-5}</td>
+	<td>${minustotal}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>number1</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>number2</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>multiply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>total</td>
+	<td>multiplytotal</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>javascript{4*3}</td>
+	<td>${multiplytotal}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>number1</td>
+	<td>40</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>number2</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>divide</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>total</td>
+	<td>dividetotal</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>javascript{40/10}</td>
+	<td>${dividetotal}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

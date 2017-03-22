@@ -1,0 +1,30 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../concordion.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div>
+		<table>
+			<tr>
+				<th>Nombre Completo</th>
+				<th>Nombre</th>
+				<th>Apellido</th>
+			</tr>
+			<tr concordion:execute="#resultado = split(#nombreCompleto)">
+				<td concordion:set="#nombreCompleto">Pau Gasol</td>
+				<td concordion:assertEquals="#resultado.nombre">Pau</td>
+				<td concordion:assertEquals="#resultado.apellido">Gasol</td>
+			</tr>
+			<tr concordion:execute="#resultado = split(#nombreCompleto)">
+				<td concordion:set="#nombreCompleto">Felipe Reyes</td>
+				<td concordion:assertEquals="#resultado.nombre">Felipe</td>
+				<td concordion:assertEquals="#resultado.apellido">Reyes</td>
+			</tr>
+		</table>
+
+	</div>
+</body>
+</html>

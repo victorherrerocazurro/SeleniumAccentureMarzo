@@ -1,0 +1,14 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+        <div>
+            <p>
+                El nombre completo
+                <span concordion:execute="#resultado = split(#TEXT)">Victor Herrero</span>
+                se separara en nombre
+                <span concordion:assertEquals="#resultado.nombre">Victor</span>
+                y apellido
+                <span concordion:assertEquals="#resultado.apellido">Herrero</span>.
+            </p>
+        </div>
+    </body>
+</html>

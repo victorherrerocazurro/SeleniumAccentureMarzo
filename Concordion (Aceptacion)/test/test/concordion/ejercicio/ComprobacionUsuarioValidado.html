@@ -1,0 +1,8 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+        <p concordion:execute="#usuario = getUser(#user,#pass)"> 
+			Mientras el password "<span concordion:set="#pass">Password</span>" sea el correcto para el usuario "<span concordion:set="#user">Juan</span>", este estara
+			<span concordion:assertTrue="#usuario.isValidado()">validado</span>, y su DNI debera ser "<p concordion:assertEquals="#usuario.getDNI()">11111111-C</p>".
+		</p>
+    </body>
+</html>

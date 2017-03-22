@@ -1,0 +1,26 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <table concordion:execute="setUpUsuarios(#usuarios)">
+        <tr><th concordion:set="#usuarios">Nombre de usuario</th></tr>
+        <tr><td>john.lennon</td></tr>
+        <tr><td>ringo.starr</td></tr>
+        <tr><td>george.harrison</td></tr>
+        <tr><td>paul.mccartney</td></tr>
+    </table>
+
+    <p>La busqueda por "<b concordion:set="#textoBuscado">arr</b>" devolverá:</p>
+
+    <table concordion:verifyRows="#usuarios : resultadosBusquedaPara(#textoBuscado)">
+        <tr><th concordion:assertEquals="#usuarios">Nombres de usuario con correspondencia</th></tr>
+        <tr><td>george.harrison</td></tr>
+        <tr><td>ringo.starr</td></tr>
+    </table>
+
+</div>
+
+</body>
+</html>

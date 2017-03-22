@@ -1,0 +1,10 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+        <p>
+            Si la hora es:
+            <span concordion:execute="setCurrentTime(#TEXT)">10:00AM</span>
+            entonces el saludo sera:
+            <span concordion:assertEquals="saludo">Buenos Dias Mundo!</span>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/Servidor/" />
+<title>TestSelenium</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestSelenium</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/05-Servidor/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//input[@name='nombre']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>nombre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nombre</td>
+	<td>victor</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//input[@name='mail']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mail</td>
+	<td>mail@mail.es</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Datos enviados</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='nombre']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='mail']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='nombre']</td>
+	<td>victor</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='mail']</td>
+	<td>mail@mail.es</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=inicio</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=inicio</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

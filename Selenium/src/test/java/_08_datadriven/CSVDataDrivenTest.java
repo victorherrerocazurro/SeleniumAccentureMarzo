@@ -1,8 +1,8 @@
 package _08_datadriven;
 
-import com.opencsv.CSVReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -19,6 +19,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 
 import com.google.common.base.Predicate;
+import com.opencsv.CSVReader;
 
 @RunWith(Parameterized.class)
 public class CSVDataDrivenTest {
@@ -32,7 +33,7 @@ public class CSVDataDrivenTest {
 	private String captcha;
      
      @Parameters
-     public static List<String[]> testData() throws IOException {
+     public static Collection<String[]> testData() throws IOException {
        return getTestData("./src/test/resources/testData/registerData.csv");
      }
      

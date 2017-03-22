@@ -8,24 +8,24 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LoadableComponentTest {
 	
-//	private static WebDriver driver;
-//	
-//	@BeforeClass
-//	public static void setUp() {
-//		driver = new FirefoxDriver();
-//	}
-//	
-//	@Test
-//	public void testCreateAccount() {
-//		
-//		WikipediaCreateAccountPage page = new WikipediaCreateAccountPage(driver);
-//		
-//		page.get();
-//		page.submitUser("usuario", "12345678", "nouser@gmail.com", "sdfsadfasd");		
-//	}
-//	
-//	@AfterClass
-//	public static void tearDown() {
-//		driver.quit();
-//	}
+	private static WebDriver driver;
+	
+	@BeforeClass
+	public static void setUp() {
+		driver = new FirefoxDriver();
+	}
+	
+	@Test
+	public void testCreateAccount() {
+		
+		WikipediaCreateAccountPage page = new WikipediaCreateAccountPage(driver);
+		
+		page.get();
+		page.submitUser("usuario", "12345678", "nouser@gmail.com", "sdfsadfasd");		
+	}
+	
+	@AfterClass
+	public static void tearDown() {
+		driver.quit();
+	}
 }
